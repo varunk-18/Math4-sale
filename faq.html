@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Math4</title>
+
+<!-- font-awesome-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> 
+
+<!-- bootstrap-icon-link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- bootstrap-5.0.2-link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+<!-- AOS-2.3.4-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+<!-- owl-carousel2.3.4-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+
+<!-- fancy-box-css -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+<!--style.css-link-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+<!-- reponsive.css-link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+<!-- favicon-link -->
+    <link rel="icon" type="image/x-icon" href="">
+
+    <style>
+.faq-main .accordion-body p {
+    margin: 15px 0;
+    font-family: 'exo-m';
+    font-size: 16px;
+    line-height: 156%;
+    color: #363636;
+}
+.faq-main h2.accordion-header button {
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'exo-b';
+    line-height: normal;
+}
+.faq-main .accordion-body ul {
+    padding-left: 30px;
+}
+
+.faq-main .accordion-body ul li {
+    margin: 0px 0 10px;
+    font-size: 16px;
+    font-family: 'exo-m';
+    line-height: normal;
+}
+
+.faq-main .accordion-item {
+    margin: 25px 0;
+    border-radius: 8px !important;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.faq-main h2.accordion-header button:after {
+    content: '\f078';
+    font-family: fontawesome;
+    background-image: none !important;
+}
+.faq-main  .accordion-button:not(.collapsed) {
+    background: #2364aa !important;
+    color: #fff;
+}
+.faq-main  .accordion-button:not(.collapsed)::after {
+    filter:brightness(0) invert(1);
+}
+@media (min-width:768px) and (max-width:991px){
+    .faq-main h2.accordion-header button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:767px){
+    .faq-main h2.accordion-header button {
+    font-size: 16px;
+}
+.faq-main .accordion-body p {
+    font-size: 14px;
+    line-height:normal;
+}
+}
+</style>
+</head>
+<body >
+<!--header-start-->
+<header>
+      <div class="top-header">
+        <p>Need a quote? Need to submit a PO?<a href="contact.html" class="top-btn">click here</a> Email us at <a href="mailto:">sales@math4sale.com</a></p> 
+      </div> 
+     <div class="mid-header">
+       <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <div class="head-content">
+                  <a href="index.html" class="navbar-brand">
+                    <img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/logo-removebg-preview.png?v=1711106546" class="img-fluid" />
+                  </a>
+                  <form class="head-form">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="What can we help you find?">
+                      <button  type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                  </form>                  
+                  <ul class="head-list">
+                    <li>
+                      <a href="">
+                        My Account
+                        <figure class="icon-img"><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/Group_7.png?v=1709729773" class="img-fluid" /></figure>                        
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        cart
+                        <figure class="icon-img"><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/Group_8.png?v=1709729772" class="img-fluid" /></figure>                        
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+       </div>
+     </div>
+    <div class="bottom-header">
+         <div class="container">
+            <div class="row">
+              <div class="col-12">
+                  <nav class="navbar navbar-expand-lg ">
+                      
+                        <a href="index.html" class="navbar-brand d-hide">
+                          <img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/logo-removebg-preview.png?v=1711106546" class="img-fluid" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                          <span class="navbar-toggler-icon"></span>
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                          <ul class="navbar-nav"> 
+                            <li class="nav-item">
+                              <a class="nav-link" href="index.html">home</a>
+                            </li>                             
+                            <li class="nav-item dropdown">
+                              <a class="nav-link" href="collection.html" >shop</a>
+                              <span class="chev-icon"><i class="fa-solid fa-caret-down"></i></span>
+                              <ul class="dropdown-menu">
+                                <li class="dropdown">
+                                  <a class="dropdown-item" href="collection.html">calculator types</a>
+                                  <span class="chev-icon"><i class="fa-solid fa-caret-down"></i></span>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="sub-collection.html">Basic Calculators</a></li>
+                                    <li><a class="dropdown-item" href="sub-collection.html">Scientific Calculators</a></li>
+                                    <li><a class="dropdown-item" href="sub-collection.html">Financial Calculators</a></li>
+                                    <li><a class="dropdown-item" href="sub-collection.html">Graphing Calculators</a></li>
+                                    <li><a class="dropdown-item" href="sub-collection.html">school 10 packs</a></li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+                                  <a class="dropdown-item" href="collection.html">brands</a>
+                                  <span class="chev-icon"><i class="fa-solid fa-caret-down"></i></span>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="sub-collection.html">Texas Instruments</a></li>
+                                    <li><a class="dropdown-item" href="sub-collection.html">casio</a></li>
+                                    <li><a class="dropdown-item" href="sub-collection.html">Calculated Industries</a></li>
+                                    <li><a class="dropdown-item" href="sub-collection.html">Sharp</a></li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown">
+                                  <a  class="dropdown-item" href="collection.html">calculator accessories</a>
+                                </li>
+                                <li class="dropdown">
+                                  <a  class="dropdown-item" href="collection.html">factory reconditioned</a>
+                                </li>
+                              </ul>
+                            </li>                           
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html">PO and Bid Request</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Upload a Purchase Order</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <ul class="icon-list d-hide">
+                          <li>
+                            <a href="" class="icon-img">                            
+                               <i class="fa-solid fa-magnifying-glass"></i>                        
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" class="icon-img">                            
+                              <img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/Group_7.png?v=1709729773" class="img-fluid" />                        
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" class="icon-img">
+                              <img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/Group_8.png?v=1709729772" class="img-fluid" />              
+                            </a>
+                          </li>
+                        </ul>
+                      
+                    </nav>
+              </div>
+            </div>
+         </div>
+       </div>
+</header>
+<!--header-end-->
+
+<!-- banner-hero-section-start -->
+<section class="hero-banner" id="hero_banner" style="background-image: url(' https://cdn.shopify.com/s/files/1/0865/0267/0638/files/banner_1.jpg?v=1710135988'); background-repeat: no-repeat; background-position: center;">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="2000">
+
+                    <h1 class="main-heading">faq</h1>
+
+                    <ul class="breadcrumb">
+
+                      <li><a href="#">Home</a></li>
+
+                      <li>faq</li>
+
+                    </ul>            
+
+                </div>
+
+            </div>            
+
+        </div>        
+
+    </div>
+
+</section>
+<!-- banner-hero-section-end -->
+
+<!-- faq-section-start -->
+<section class="faq-section">
+
+    <div class="section-heading">
+
+        <h2 class="sub-heading">frequently asked question</h2>
+
+    </div>
+
+    <!-- ========================= -->
+<div class="container">
+    <div class="faq-main">
+<div class="accordion accordion-flush" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        What is refurbished and why should I buy refurbished from Math4Sale, Inc?
+      </button>
+    </h2> 
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>Buying refurbished and/or used saves you money without compromising functionality. With savings from 20-50% off retail through Math4Sale, Inc. it's a great deal! We've been doing this for 7+ years and are your trusted source for saving money on graphing calculators.</p>
+
+        <p>Refurbishment is the process of maintenance or major repair of an item, either aesthetically or mechanically.</p>
+
+        <p>Refurbished products cannot be sold as new products in the US, which is why they are relabeled as refurbished or refreshed units even if they are good-as-new (if, for example, the unit was returned for some reason unrelated to the product itself, such as the customer changing their mind about the color). Refurbished items may have scratches, dents or other forms of cosmetic damage which do not affect the performance of the unit.</p>
+
+        <p>Refurbished products could possibly be the products which are returned by the customer within the return policy of the company which sold the product, without any defect with the product. Refurbished products are generally bench tested and certified, then re-packaged, labeled as a Refurbished Product.</p>
+
+        <p>Refurbished electronics are products which have most often been returned to the manufacturer because it was unwanted or had some minor defect. The items are simply returned because most major retail superstores offer a 30-day money back guarantee on their products and there are those consumers that just simply take advantage of this liberal return policy.</p>
+
+        <p>However, there is also a very good chance that the unit you receive may never have been used as it may have been a unit whose box was damaged or simply an overstock model that many retailers return to the manufacturers to make room for incoming models.</p>
+
+        <p>When the electronic goods such as TVs, home theater systems, computers and other electronics have been returned in an undamaged and fully functional condition and although they are still in a brand new condition, due to legal reasons they cannot be marketed or sold as new. In such cases, where it is found to have a minor defect, this is rectified by replacing the defective component, or permanently repairing it.</p>
+
+        <p>Refurbished items are generally thought to be cheap and poorly fixed products because of their sometimes shorter warranties. However, most products have nothing wrong with them, they were simply exchanged over incompatibility or are cosmetically damaged.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        What is your return policy and is there a warranty?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>We offer a 30-day money back guarantee on all refurbished and used calculators. Additionally we offer an extended 90-day in house warranty against technical defects on refurbished units and a 30-day warranty on all used units.</p>
+
+        <p>Due to the nature of new sealed items, we are unable to accept returns unless there is a technical defect with the item.</p>
+
+        <p>If you would like to purchase an additional extended warranty this can be done directly through Squaretrade and Ebay, which we highly recommend and have no affiliation with.</p>
+
+        <p>For additional information please view our returns tab on our listing or store.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Shipping Questions
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>Please see our shipping tab for full information.</p>
+
+        <p>Once your order is shipped you will receive an e-mail from our automated system with shipping information regarding your order including tracking numbers. Again, please allow 24-48 hours for tracking information to update.</p>
+
+        <p>Please check your spam filters for these e-mails as we send 1,000's of e-mails.</p>
+
+        <p>If you have not received your item, please follow these steps. Please understand mishaps and mistakes happen from time-to-time. We are 100% committed to working with you to resolve any issues regarding shipping.</p>
+
+        <ul>
+        <li>Check your e-mail and check on the update of the tracking # in the e-mail. Many times the item has actually been delivered. The packages are small and fit in a mailbox.</li>
+
+        <li>If it shows the item has been delivered, but you do not see it, please look around or ask your neighbors. (Again, these items fit in your standard mail box)</li>
+
+        <li>Note: USPS Does not leave notices (in general).</li>
+
+        <li>If the item shows still in transit, be patient. We know you want your item as fast as possible, and we want you to get it as fast as possible. Unfortunately with the sheer volume USPS processes some items can get caught up for a day or two in shipping. We know this sucks, but unfortunately there is nothing we can do about it.</li>
+
+        <li>If the item shows as delivered, but you have not received it, or the item has taken far beyond the expected delivery time. Please call your local USPS office and ask them to look into the issue (sometimes packages get held at your local USPS).</li>
+
+
+        <li>IF none of these resolve your issue, please message us ASAP so that we can get to the bottom of the situation and resolve it as quickly as possible together.</li>
+        
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+        My Calculator Does Not Work/Turn-On/Etc…
+      </button>
+    </h2>
+    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>If any of these seem like basic recommendation, we only include them, because they have resolved issues.</p>
+
+      
+        <ul>
+        <li>Ensure you have put in 4-brand new AAA batteries into the unit properly. Calculators may be small, but they drain battery power quickly.</li>
+
+        <li>Ensure the contrast is set properly (2nd + Up or 2nd + Down, repeatedly)</li>
+
+        <li>If the unit is still not working, try to reset the unit. These calculators are like mini-computers and sometimes simply need a re-set</li>
+
+        <li>With 4 batteries in hold 2nd + On.</li>
+
+        <li>While holding 2nd + On, remove one battery</li>
+
+
+        <li>Wait 5 seconds</li>
+        <li>Insert battery and release 2nd + On</li>
+        <li>Turn unit on</li>
+        <li>If none of the above help resolve your issue, please see our returns section so that we may resolve the issue as quickly as possible. Please feel free to send us an e-mail so we can take care of the issue as quickly as possible.</li>
+        <li>In your e-mail please tell us as much information regarding your purchase as possible.</li>
+        <li>We will only accept returns within 30-days.</li>
+        
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+        My BAII Is Calculator the Wrong Answer, what should I do?
+      </button>
+    </h2>
+    <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>There is 2 versions of the BAII Plus: The 2nd edition which is slightly darker brown color and the 3rd edition which is more of a blue color. They are both the same, except their default settings are different which will cause improper calculation.</p>
+
+      
+        <ul>
+        <li>Hit 2nd + I/Y</li>
+
+        <li>You will see the item set to 12 or 1</li>
+
+        <li>Change to 1 or 12 (the opposite)</li>
+
+        <li>Try your calculation</li>
+
+        <li>If none of the above help resolve your issue, please see our returns section so that we may resolve the issue as quickly as possible. Please feel free to send us an e-mail so we can take care of the issue as quickly as possible.</li>
+
+
+       
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+        What's included with my item?
+      </button>
+    </h2>
+    <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>Please, please, please carefully read the description. We take great time and care to ensure that all our listings are accurate. We do our best, and it is also the buyer's responsibility to read and ensure they understand what they are purchasing.</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+    </div>
+</div>
+<!-- ==================================== -->
+</section>
+
+<!-- faq-section-end -->
+<!-- footer-start -->
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="footer-main">
+                    <div class="footer-main-inner">
+                        <a  href="index.html" class="navbar-brand">
+                            <img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/logo-removebg-preview.png?v=1711106546" class="img-fluid">
+                        </a>
+                        <div class="footer-content">
+                            <p>Math4Sale, Inc - Your #1 Source for Saving Money on Graphing Calculators Since 2005!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-main">
+                    <div class="footer-main-inner">
+                        <h5 class="footer-heading">Quick Links</h5>
+                        <ul>
+                            <li><a href="about.html">About Math4Sale, Inc.</a></li>
+                            <li><a href="about-recondition.html">About Reconditioned</a></li>
+                            <li><a href="colletion.html">Calculators</a></li>
+                            <li><a href="#">10x pack calculator</a></li>                                                  
+                            <li><a href="contact.html">PO and Bid Request</a></li>                            
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="faq.html">FAQ's</a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <div class="footer-main-inner">
+                        <h5 class="footer-heading">Useful Links </h5>
+                        <ul>
+                            <li><a href="quote-request.html">Request a Quote</a></li>  
+                            <li><a href="contact.html">Upload a Purchase Order</a></li>                       
+                            <li><a href="shipping.html">Shipping & Returns</a></li>
+                            <li><a href="term.html">Terms and Conditions</a></li>                            
+                            <!-- <li><a href="po.html">Submit a PO</a></li> -->
+                            <li><a href="bid.html">Request for Bid</a></li>                            
+                            <li><a href="">Need our W9? Click here.</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="footer-main-inner">
+                        <h5 class="footer-heading">information</h5>
+                        <ul>
+                            <li>
+                                <label><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/emial.png?v=1709809696">Email</label>
+                                <a href="mailto:sales@math4sale.com">
+                                    sales@math4sale.com
+                                </a>
+                            </li>
+                            <li>
+                                <label><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/phone.png?v=1709809696">Phone</label>
+                                <a href="tel:+1 800-805-3392">
+                                    +1 800-805-3392
+                                </a>
+                            </li>
+                            <li>
+                                <label><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/printer_4561442.png?v=1711434215">Fax</label>
+                                <a href="tel:+1 888-325-6940">
+                                +1 888-325-6940
+                                </a>
+                            </li>
+                            <li><label><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/location.png?v=1709809696">Location</label>
+                                <a href="#">
+                                    Math4Sale, Inc. 16787 Beach Blvd Huntington Beach, CA 92647
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+            </div>
+        </div>
+       <div class="col-lg-12">
+            <div class="bottom-footer">
+                <div class="bottom-footer-content">
+                    <p>Math4Sale, Inc. Copyright 2005-2024 - All Rights Reserved.</p>
+                </div>
+                <div class="footer-payment">
+                    <ul>
+                    <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/Group_141.png?v=1709809838"></a></li>
+                    <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/Group_139.png?v=1709809839"></a></li>
+                    <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/image_11.png?v=1709809839"></a></li>
+                    <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/Group_136.png?v=1709809838"></a></li>
+                    <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0865/0267/0638/files/Group_653.png?v=1709809838"></a></li>
+                </ul>
+                </div>
+            </div>
+       </div>
+    </div>
+</footer>
+<!-- footer-end -->
+
+
+
+<!-- jQuery-min.js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+
+
+<!--bootstrap-5.0.2-js-->
+
+<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- AOS-2.3.4-js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+
+<!-- AOS-init -->
+
+<script>
+
+    AOS.init();
+
+</script>
+
+
+
+<!-- fany-box-js -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer="defer"></script>
+
+
+
+<!-- owl-carousel-2.3.4-js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+<!-- style.js -->
+
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
